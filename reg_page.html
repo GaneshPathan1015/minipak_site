@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
+    <title>Registration page</title>
+    <STYle>
+        .black{
+            background-color: black;
+        }
+        .darksky{
+            background-color: rgb(0, 80, 64);
+        }
+        .white{
+            background-color: white;
+        }
+        .cream{
+            background-color: rgb(251, 234, 155);
+        }
+        
+        .flex{
+            display: flex;
+        }
+        .headinner{   
+            margin: 10px 0px 10px 80px; 
+              
+        }
+        .register{
+           margin-top: 15px;
+           float: right;
+        }
+        
+        .margin0{
+            margin: 0%;
+        }
+        .hrsize{
+            border: none;
+            border-top: 1px solid white;
+        }
+        .cont {
+            color: white;
+            font-size: small;
+        }
+        
+        .navbar li{
+            list-style: none;
+        }
+        .navbar li a{
+            color: aliceblue;
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+        }
+        .height{
+            height: 70px;
+        }
+        .contentheight{
+            height: 580px;
+        }
+        .img{
+            margin: 40px 20px 0 150px;
+        }
+        .text{
+            color: white;
+            margin: 0 100px 10px 80px;
+            font-style: oblique;
+            
+        }
+        .tex p{
+            
+            font-weight: 550;
+            word-spacing: 5px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .reg{
+            height: 60%;
+            width: 50%;
+            border-radius: 15px;
+            margin: 15% 10% 10% 25%;
+            background-color: rgb(250, 248, 247);
+        }
+        .forgetpas .a1{
+            margin: 20px 10px 0px 50px;
+            
+        }
+        .forgetpas .a2{
+            margin: 0px 10px 0px 50px;
+        }
+        .forgetpas a{
+            text-decoration: none;
+            font-size: small;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .forgetpas a p{
+            color: black;
+            font-size: small;
+        }
+        .inp .info input{
+            height: 50px;
+            border-radius: 15px;
+            width: 300px;
+            margin: 0px 0px 15px 0;
+            text-align: center;
+            background-color: aliceblue;  
+        }        
+        .submit input{
+            background-color: rgb(104, 253, 104);
+            height: 50px;
+            border-radius: 15px;
+            width: 300px;
+            margin-bottom: -10%;
+        } 
+        .head{
+            font-style: italic;
+        }
+        
+        .green{
+            color: green;
+        }
+        .sicon p{
+            color:  white;
+        }
+        
+        .headin{
+            border: 2px solid  red;
+        }
+        .borderimg{
+            border-radius: 20px;
+            padding: 5px;
+            margin: 5px;
+            background-color: aliceblue;
+            border: 0px solid black;
+        }
+        #sin{
+            border: 2px solid black;
+           padding: 0 0 0 20px;
+        }
+        #centimg{
+            margin: 0px auto;
+        }
+        .reg_detail input{
+            width: 80%;
+            border-radius: 20px;
+            border: 2px solid black;
+            margin: 0 0 10px 0;
+            padding: 20px 10px 20px 10px;
+            
+        }
+        #regform{
+            font-weight: 800;
+            font-size: large;
+            color: rgb(0, 80, 64);
+            background-color: rgb(255, 255, 255);
+        }
+        #regform .btn-primary:hover{
+            transition: 1s;
+            background-color: rgb(98, 49, 49);
+        }
+        #regform input{
+            font-weight: 700;
+            font-size: large;
+            border-radius: 20px;
+            
+            background-color: rgb(228, 228, 228);
+        }
+        ::-webkit-input-placeholder{
+           color: rgb(0, 80, 64); 
+        }
+        .btn-primary{
+            border-radius: 20px;
+            border: 2px solid black;
+            background-color: green;
+        }
+        .btn-primary:hover{
+            color: white;
+            background-color: rgb(22, 107, 90) ;
+        }
+        .hover:hover{
+            color: rgb(0, 80, 64) ;
+        }
+        .socialhover img:hover{
+
+            border-radius: 500px;
+            background-color: rgb(10, 255, 255);
+            transition: 1s;
+        }
+        
+        #forlogin{
+            width: 80%;
+        }
+        .sidebar p a{
+            text-decoration: none;
+            color: white;
+        }
+        .r{
+            border-radius: 5000px;
+        }
+        .login{
+            color: rgb(254, 254, 254);
+            background-color: rgb(0, 80, 64);
+        }
+        .social{
+            color: black;
+            background-color: rgb(206, 226, 244);
+        }
+        .login:hover{
+            color: black;
+            background-color: rgb(206, 226, 244);
+            transition: 1s
+        }
+        .social:hover{
+            color: white;
+            transition: 1s;
+            background-color: green;
+        }
+        
+        
+    </STYle>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row black">
+            <div class="row inner m-md-2">
+                <div class="col-sm-5 mr-sm-0 p-2">
+                    <a href=""><img src="logo.png" alt=" this is logo" width="200px" height="40px"></a>
+                </div>
+                <div class="col-sm-7 pt-md-2">
+                    <div class="col-md-11  d-flex">
+                        <div class=" col-md-9 justify-content-end d-flex">
+                            <div class=" fw-bolder fs-5 pt-2">
+                                <a class="login  r text-decoration-none  p-2 m-2" href="" target="_blank">Login</a>
+                            </div>
+                            <div class=" fw-bolder fs-5 pt-2" >
+                                <a class="social r text-decoration-none p-2 m-2" href="" target="_blank">Sign Up</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3  d-sm-flex ">
+                            <div class="px-2 d-none d-md-block">
+                                <a  href=""><svg class=" social r mb-2" width="40px" height="40px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 5H9.5C7.29086 5 5.5 6.79086 5.5 9V15C5.5 17.2091 7.29086 19 9.5 19H15.5C17.7091 19 19.5 17.2091 19.5 15V9C19.5 6.79086 17.7091 5 15.5 5Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 15C10.8431 15 9.5 13.6569 9.5 12C9.5 10.3431 10.8431 9 12.5 9C14.1569 9 15.5 10.3431 15.5 12C15.5 12.7956 15.1839 13.5587 14.6213 14.1213C14.0587 14.6839 13.2956 15 12.5 15Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <rect x="15.5" y="9" width="2" height="2" rx="1" transform="rotate(-90 15.5 9)" fill="#000000"></rect> <rect x="16" y="8.5" width="1" height="1" rx="0.5" transform="rotate(-90 16 8.5)" stroke="#000000" stroke-linecap="round"></rect> </g></svg></a>
+                                <a href=""><svg class="social r mb-2  " fill="#000000" width="40px" height="40px" viewBox="0 0 32.00 32.00" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>twitter</title> <path d="M24 8.531c-0.688 1-1.5 1.844-2.469 2.563 0.031 0.219 0.031 0.438 0.031 0.656 0 6.5-4.938 14-14 14-2.781 0-5.375-0.844-7.563-2.219 0.375 0.031 0.781 0.094 1.188 0.094 2.313 0 4.406-0.813 6.094-2.125-2.188-0.031-3.969-1.5-4.594-3.438 0.281 0.063 0.625 0.094 0.938 0.094 0.438 0 0.906-0.063 1.313-0.188-2.281-0.438-3.969-2.406-3.969-4.781v-0.063c0.688 0.344 1.406 0.563 2.219 0.594-1.313-0.906-2.188-2.406-2.188-4.094 0-0.906 0.25-1.75 0.656-2.5 2.438 2.969 6.063 4.969 10.156 5.156-0.063-0.344-0.125-0.75-0.125-1.125 0-2.719 2.188-4.938 4.906-4.938 1.438 0 2.719 0.625 3.625 1.594 1.125-0.219 2.156-0.656 3.094-1.219-0.344 1.156-1.125 2.156-2.125 2.75 1-0.125 1.906-0.406 2.813-0.813z"></path> </g></svg></a>
+                            </div>
+                            <div class="search">
+                                <a href=""><svg class=" social r mb-2 p-2 fill="#000000" width="40px" height="40px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.027 9.92L16 13.95 14 16l-4.075-3.976A6.465 6.465 0 0 1 6.5 13C2.91 13 0 10.083 0 6.5 0 2.91 2.917 0 6.5 0 10.09 0 13 2.917 13 6.5a6.463 6.463 0 0 1-.973 3.42zM1.997 6.452c0 2.48 2.014 4.5 4.5 4.5 2.48 0 4.5-2.015 4.5-4.5 0-2.48-2.015-4.5-4.5-4.5-2.48 0-4.5 2.014-4.5 4.5z" fill-rule="evenodd"></path> </g></svg></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="row darksky ">
+            <div class="col-sm-6">
+                <ul class="navbar">
+                    <li><a href=""> Analysis</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Resources </a></li>
+                    <li><a href="">Brokers</a></li>
+                    <li><a href="">Trading</a></li>
+                    <li><a href="">ToolsAcademy</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <hr class="margin0 hrsize">
+
+        <div class="row">
+            <div class="col-md-6 bg-black">
+                <div class="coltainer p-lg-5 m-lg-5 "> 
+                    <div class="row  " >
+                        <div class="col-md-12 d-flex d-flex justify-content-center pt-md-5 ">
+                            <img class=" " src="academy.png" alt="accedmy" width="180px" height="120px">
+                        </div>
+                    </div>
+                    <div class="text-center text-white mb-lg-5 pb-md-5">
+                        <h3 class=" ">Markets, News, Education & More</h3>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-6 ">
+                <div class="container m-lg-2 p-lg-5" id="regform">
+                    <div class="row">
+                        <h2>Register New Account</h2>
+                    </div>
+                    <div class="row regform">
+                        <div class="col-md-12">
+                            <div class="row m-lg-3 p-lg-3 ">
+                                <form action="">
+                                    <div class="reg_detail m-3 ">
+                                        <input type="Name" name="name" placeholder="Full Name" required>
+                                        <br>
+                                        <input type="text" name="phone" placeholder="Mobile Number" required>
+                                        <br>
+                                        <input type="email" name="username" placeholder="Email Address" required>
+                                        <br>
+                                        <input type="date" name="dob" value="Date of Birth" required>
+                                        <br>
+                                        <input type="password" name="password" placeholder="Password" required>
+                                    </div>
+                                    <div class="reg_detail m-lg-3 " >
+                                        <div class=" ">
+                                            <input class=" btn-primary " type="submit" value="Next">
+                                        </div>
+                                    </div>
+                                    <div id="forlogin">
+                                        <p class="m-0 p-0 text-center"><a class="hover" href="">Login</a></p>
+                                        <p class="m-0 p-0 text-center" ><a class="hover" href="">I've forgotten my password!</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <hr class="margin0 ">
+
+        <div class="row cream">
+            <div class="col-10 m-auto tex ">
+                <p class="mt-5 "><b>DISCLAIMER:</b> THE CONTENT ON OUR SITE IS PROVIDED FOR GENERAL INFORMATION ONLY. IT IS NOT INTENDED TO AMOUNT TO ADVICE ON WHICH YOU SHOULD RELY. INFORMATION ON OUR SITE DOES NOT CONSTITUTE ANY FORM OF RECOMMENDATION, REPRESENTATION, ENDORSEMENT OR ARRANGEMENT AND IS NOT INTENDED TO BE RELIED UPON BY YOU IN MAKING (OR REFRAINING FROM MAKING) ANY SPECIFIC INVESTMENT OR OTHER DECISIONS. YOU MUST OBTAIN PROFESSIONAL OR SPECIALIST ADVICE BEFORE TAKING, OR REFRAINING FROM, ANY ACTION ON THE BASIS OF THE CONTENT ON OUR SITE. The full terms can be viewed here.</p>
+            </div>
+        </div>
+
+        <hr class="margin0 hrsize">
+
+        <div class="row darksky ">
+            <div class="row text-center m-2 p-2">
+                <div class="col-md-12 text-white ">
+                    <h3 class="fw-bold">Why not view our socials, analysis, or resources?</h3>
+                </div>
+            </div>
+            <div class="row m-0 p-0">
+                <div class="col-md-12 d-flex justify-content-center ">
+                      <hr class="">
+                </div>
+            </div>
+            
+            <div class="row m-0 p-0 text-white">
+                <div class="col-md-6 p-0 m-0">
+                    <div class="row m-0 p-0 justify-content-around ">
+                        <div class="col-sm-2 text-center ">
+                            <div class="socialhover"><a href=""><img src="icons8-twitter.svg"  alt="" width="50px" height=" 35px"></a></div>
+                            <div class="mt-2">
+                                <p class="fw-bold">Follow us on twitter  and analysis</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 text-center ">
+                        <div class="socialhover">
+                            <a href=""><img src="icons8-youtube.svg" alt="" width="50px" height=" 35px"></a>
+                        </div>
+                        <div class="mt-2">
+                            <p class="fw-bold">Watch & Subscribe to our Youtube for videos and analysis! </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 m-0 p-0">
+                    <div class="row m-0 p-0 justify-content-around">
+                    <div class="col-sm-2 m-0 p-0 text-center">
+                        <div class="socialhover">
+                            <a href=""><img src="icons8-instagram.svg" alt="" width="50px" height=" 35px"></a>
+                        </div>
+                        <div class="mt-1">
+                            <p class="fw-bold">Follow our Instagram to keep up to date. We post stories often!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <div class="socialhover">
+                            <a href=""><img src="icons8-whatsapp.svg" alt="" width="50px" height=" 35px"></a>
+                        </div>
+                        <div class="mt-2">
+                            <p class="fw-bold">Join our WhatsApp chat for free! See real time analysis on the markets</p>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+        </div>
+
+        <div class="row black justify-content-around ">
+                <div class="col-md-3 mt-3 mb-3  ">
+                    <div class="row col-md-12 m-0 p-0  col-sm-12 col-md-flex-12">
+                        <div class="col-4 " >
+                            <a href=""><svg class=" img-fluid borderimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                                <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"></path>
+                                </svg></a>
+                            </div>
+                            <div class="col-4">
+                            <a href="">
+                                <img class=" img-fluid p-1 borderimg" width="40" height="40" src="phone-call-svgrepo-com.svg" alt="phone--v1"/>
+                            </a>
+                            </div>
+                        <div class="col-4">
+                            <a href="">
+                                <svg class=" img-fluid borderimg"xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 24 24">
+                                    <path d="M 8 3 C 5.2 3 3 5.2 3 8 L 3 16 C 3 18.8 5.2 21 8 21 L 16 21 C 18.8 21 21 18.8 21 16 L 21 8 C 21 5.2 18.8 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.7 5 19 6.3 19 8 L 19 16 C 19 17.7 17.7 19 16 19 L 8 19 C 6.3 19 5 17.7 5 16 L 5 8 C 5 6.3 6.3 5 8 5 z M 17 6 C 16.4 6 16 6.4 16 7 C 16 7.6 16.4 8 17 8 C 17.6 8 18 7.6 18 7 C 18 6.4 17.6 6 17 6 z M 12 7 C 9.2 7 7 9.2 7 12 C 7 14.8 9.2 17 12 17 C 14.8 17 17 14.8 17 12 C 17 9.2 14.8 7 12 7 z M 12 9 C 13.7 9 15 10.3 15 12 C 15 13.7 13.7 15 12 15 C 10.3 15 9 13.7 9 12 C 9 10.3 10.3 9 12 9 z"></path>
+                                    </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" mt-2 p-0 fw-bolder fs-5 sidebar"> 
+                        <p class="m-0 "><a href="">Home</a></p>
+                         <hr class="headin">
+                        <p><a href="">Analysis</a></p>
+                        <hr class="headin">
+                        <p class="m-0"><a href="">Resources</a></p>
+                         <hr class="headin">
+                        <p><a href="">Broker</a></p>
+                        <hr class="headin">
+                        <p class="m-0"><a href="">Trading Tool</a></p>
+                         <hr class="headin">
+                        <p><a href="">cookies policy</a></p>
+                        <hr class="headin">
+                        <p class="m-0"><a href="">privacy policy</a></p>
+                         <hr class="headin">
+                        <p><a href="">Terms & Conditions</a></p>
+                        <hr class="headin">
+                        <p class="m-0"><a href="">Login</a></p>
+                         <hr class="headin">
+                        <p><a href="">Accedmy</a></p>
+                        <hr class="headin">
+                        <p><a href="">Contact Us</a></p>
+                        <hr class="headin">
+                        
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3 text-white">
+                    <h2>About us.</h2>
+                    <p>Minipip was founded in 2019 with the simple aim of making investing, trading, and personal finance easier to understand. The stock market and financial world worries many people; however, it is not as complicated as it may seem.  That’s why at Minipip we offer free resources on many topics, a free financial academy, financial tools and free analysis on shares and other financial instruments.<br>
+                        Minipip is not regulated by the financial conduct authority, and we do not give specific individual advice, though we do work with an abundance of regulated firms to who do offer these services. Visit our recommended brokers and partners page for more information. <br>
+                        Most our information and services are free, and we aim to keep it that way, we do this to help build trust of our users. We believe this kind of information should be available to the public at no cost. Please do not plagiarise any of our work.</p><br>
+                </div>
+                <div class="col-md-3 mt-3 text-white ">
+                    <h2> Terms of uses. </h2>
+                    <p>Minipip Limited is registered in the UK. Company number – 12377177. Minipip is an information usage website collecting data from third parties. Any Analysis, news, tools, or resources are for educational or entertainment purposes only. By using this website, you agree to all our Terms and privacy policy. <br>
+                        Spread bets and CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage or volatile market conditions.  A high percentage of investors lose money when trading these products (Varies from broker to broker). You should consider whether you understand how spread bets and CFDs work, and whether you can afford to take the high risk of losing your money. Investments are also risky, and you could lose money with your provider. For more assistance on the products available, contact us now or visit our Resources page. <br>
+                        Minipip are remunerated on client referrals from its partnering brokers. For more information about our partnering brokers or Minipip, please contact us.</p>
+                </div>
+            
+        </div>
+
+    </div>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

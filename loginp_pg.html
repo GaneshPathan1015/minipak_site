@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
+    <title>Login page</title>
+    <STYle>
+        .black{
+            background-color: black;
+        }
+        .darksky{
+            background-color: rgb(0, 80, 64);
+        }
+        .white{
+            background-color: white;
+        }
+        .cream{
+            background-color: rgb(251, 234, 155);
+        }
+        
+        .flex{
+            display: flex;
+        }
+        .headinner{   
+            margin: 10px 0px 10px 80px; 
+              
+        }
+        .register{
+           margin-top: 15px;
+           float: right;
+        }
+        .login a,.signup a{
+            border-radius: 15px;
+            text-decoration: none;
+            padding: 5px 20px 10px 15px;
+            border: 0px solid white;
+            
+        }
+        .margin0{
+            margin: 0%;
+        }
+        .hrsize{
+            border: none;
+            border-top: 1px solid white;
+        }
+        .cont {
+            color: white;
+            font-size: small;
+        }
+        .login a{
+            color: black;
+            background-color: rgb(0, 80, 64);
+        }
+        .signup a{
+            margin-left: 15px ;
+            margin-right: 0px;
+            color: black;
+            background-color:rgb(150, 147, 147);
+        }
+        .social a{
+            padding: 5px 5px;
+            border-radius: 50px;
+            border: 0px solid white;
+            margin-right: 0px;
+            margin-left: 15px;
+            background-color: rgb(150, 147, 147);
+        }
+        .search{
+            border-radius: 20px ;
+            padding-bottom: -5px;
+            margin-top: -4px;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            padding: 5px 1px 0px 5px ;
+            background-color: rgb(150, 147, 147) ;
+        }
+        .social img{
+            padding: 0px 2px 5px 2px;
+        }
+        .navbar li{
+            list-style: none;
+        }
+        .navbar li a{
+            color: aliceblue;
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+        }
+        .height{
+            height: 70px;
+        }
+        .contentheight{
+            height: 580px;
+        }
+        .img{
+            margin: 40px 20px 0 150px;
+        }
+        .text{
+            color: white;
+            margin: 0 100px 10px 80px;
+            font-style: oblique;
+            
+        }
+        .tex p{
+            
+            font-weight: 550;
+            word-spacing: 5px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .reg{
+            height: 60%;
+            width: 50%;
+            border-radius: 15px;
+            margin: 15% 10% 10% 25%;
+            background-color: rgb(250, 248, 247);
+        }
+        .forgetpas .a1{
+            margin: 20px 10px 0px 50px;
+            
+        }
+        .forgetpas .a2{
+            margin: 0px 10px 0px 50px;
+        }
+        .forgetpas a{
+            text-decoration: none;
+            font-size: small;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .forgetpas a p{
+            color: black;
+            font-size: small;
+        }
+        .inp .info input{
+            height: 50px;
+            border-radius: 15px;
+            width: 300px;
+            margin: 0px 0px 15px 0;
+            text-align: center;
+            background-color: aliceblue;  
+        }        
+        .submit input{
+            background-color: rgb(104, 253, 104);
+            height: 50px;
+            border-radius: 15px;
+            width: 300px;
+            margin-bottom: -10%;
+        } 
+        .head{
+            font-style: italic;
+        }
+        
+        .green{
+            color: green;
+        }
+        .sicon p{
+            color:  white;
+        }
+        
+        .headin{
+            border: 2px solid  red;
+        }
+        .borderimg{
+            border-radius: 20px;
+            padding: 5px;
+            margin: 5px;
+            background-color: aliceblue;
+            border: 0px solid black;
+        }
+        #sin{
+            border: 2px solid black;
+           padding: 0 0 0 20px;
+        }
+        #centimg{
+            margin: 0px auto;
+        }
+        .FormFull input{
+            width: 100%;
+            border-radius: 20px;
+            border: 2px solid black;
+            margin: 0 0 10px 0;
+            padding: 20px 10px 20px 10px;
+            
+        }
+        .FormFull{
+            margin-bottom: 20px;
+        }
+        p a{
+            text-decoration: none;
+            color: green;
+        }
+        #formlogin{
+            font-weight: 600;
+            font-size: large;
+            border-radius: 20px;
+            color: rgb(0, 80, 64);
+            background-color: rgb(227, 224, 224);
+        }
+        .btn-primary{
+            border-radius: 20px;
+            border: 2px solid black;
+            background-color: green;
+        }
+        .btn-primary:hover{
+            color: white;
+            background-color: rgb(0, 80, 64) ;
+        }
+        .hover:hover{
+            color: rgb(0, 80, 64) ;
+        }
+        .socialhover a:hover{
+            border: 2px solid black;
+            color: green;
+        }
+        .socialbod{
+            border: 2px solid black;
+        }
+        
+    </STYle>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row black">
+            <div class="row inner m-md-2">
+                <div class="col-sm-4 mr-sm-0">
+                    <a href=""><img src="logo.png" alt=" this is logo" width="200px" height="40px"></a>
+                </div>
+                <div class="col-sm-7 pt-md-2 ">
+                    <div class="col-md-11  item flex justify-content-end ">
+                        <div class="info-sm flex">
+                            <div class="login ">
+                                <a href="" target="_blank">Login</a>
+                            </div>
+                            <div class="signup" >
+                                <a href="" target="_blank">Sign Up</a>
+                            </div>
+                        </div>
+                        <div class="links flex">
+                            <div class="social">
+                                <a href=""><img src="icons8-instagram.svg" alt="instapage" width="30px" height="30px"></a>
+                                <a href=""><img src="icons8-twitter.svg" alt="twiter page" width="30px" height="30px"></a>
+                            </div>
+                            <div class="search  ">
+                                <a href=""><img src="icons8-search.svg" alt="search" width="27px" height="27px"></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="row darksky ">
+            <div class="col-sm-6">
+                <ul class="navbar">
+                    <li><a href=""> Analysis</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Resources </a></li>
+                    <li><a href="">Brokers</a></li>
+                    <li><a href="">Trading</a></li>
+                    <li><a href="">ToolsAcademy</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr class="margin0 hrsize">
+        <div class="row">
+            <div class="col-md-6 bg-black   ">
+                <div class="coltainer p-lg-5 m-lg-5 "> 
+                    <div class="row  " >
+                        <div class="col-md-12 d-flex d-flex justify-content-center pt-md-5 ">
+                            <img class=" " src="academy.png" alt="accedmy" width="180px" height="120px">
+                        </div>
+                    </div>
+                    <div class="text-center text-white mb-lg-5 pb-md-5">
+                        <h3 class=" ">Markets, News, Education & More</h3>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-6 ">
+                <div class="container p-lg-5 ">
+                    <div class="row m-lg-5 p-lg-5 "id="formlogin">
+                        <div class="col-md-12" >
+                            <h2>Login</h2>
+                        </div>
+                        <div class="col-md-12 ">
+                            <h4>Sign in to access your portal.</h4>
+                        </div>
+                        <div class="col-md-12 ">
+                            <form action="">
+                                <p class="form">
+                                    <div class="FormFull">
+                                        <input type="email" placeholder="Email Address" required>
+                                        <br>
+                                        <input type="password" placeholder="Password" required>
+                                    </div>
+                                    <div class="FormFull ">
+                                        <input class="btn-primary" type="submit" value="Login" >
+                                    </div>
+                                </p>
+                            </form>
+                                <p class="mb-0 text-center hover"><a href="">Not a member?</a><a href=""> Sign up now</a></p>
+                                <p class="text-center hover"><a href="">I've forgotten my password!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <hr class="margin0">
+
+        <div class="row cream">
+            <div class="col-10 m-auto tex ">
+                <p class="mt-5 "><b>DISCLAIMER:</b> THE CONTENT ON OUR SITE IS PROVIDED FOR GENERAL INFORMATION ONLY. IT IS NOT INTENDED TO AMOUNT TO ADVICE ON WHICH YOU SHOULD RELY. INFORMATION ON OUR SITE DOES NOT CONSTITUTE ANY FORM OF RECOMMENDATION, REPRESENTATION, ENDORSEMENT OR ARRANGEMENT AND IS NOT INTENDED TO BE RELIED UPON BY YOU IN MAKING (OR REFRAINING FROM MAKING) ANY SPECIFIC INVESTMENT OR OTHER DECISIONS. YOU MUST OBTAIN PROFESSIONAL OR SPECIALIST ADVICE BEFORE TAKING, OR REFRAINING FROM, ANY ACTION ON THE BASIS OF THE CONTENT ON OUR SITE. The full terms can be viewed here.</p>
+            </div>
+        </div>
+
+        <hr class="margin0 hrsize">
+
+        <div class="row darksky ">
+            <div class="row text-center m-2 p-2">
+                <div class="col-md-12 text-white ">
+                    <h3>Why not view our socials, analysis, or resources?</h3>
+                </div>
+            </div>
+            <div class="row m-0 p-0">
+                <div class="col-md-12 d-flex justify-content-center ">
+                      <hr class="">
+                </div>
+            </div>
+            
+            <div class="row m-0 p-0 text-white">
+                <div class="col-md-6 p-0 m-0">
+                    <div class="row m-0 p-0 justify-content-around ">
+                        <div class="col-sm-2 text-center ">
+                            <div class="socialhover"><a href=""><img src="icons8-twitter.svg"  alt="" width="50px" height=" 35px"></a></div>
+                            <div class="mt-2">
+                                <p>Follow us on twitter  and analysis</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 text-center ">
+                        <div class="socialhover">
+                            <a href=""><img src="icons8-youtube.svg" alt="" width="50px" height=" 35px"></a>
+                        </div>
+                        <div class="mt-2">
+                            <p>Watch & Subscribe to our Youtube for videos and analysis! </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 m-0 p-0">
+                    <div class="row m-0 p-0 justify-content-around">
+                    <div class="col-sm-2 m-0 p-0 text-center  ">
+                        <div>
+                            <a href=""><img src="icons8-instagram.svg" alt="" width="50px" height=" 35px"></a>
+                        </div>
+                        <div class="mt-1">
+                            <p>Follow our Instagram to keep up to date. We post stories often!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <div class="text-center">
+                            <a href=""><img src="icons8-whatsapp.svg" alt="" width="50px" height=" 35px"></a>
+                        </div>
+                        <div class="mt-2">
+                            <p>Join our WhatsApp chat for free! See real time analysis on the markets</p>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+        </div>
+        <div class="row black justify-content-around ">
+                <div class="col-md-3 m-3 headin">
+                    <div class="row headin">
+                        <div class="col-sm-4 socialhover" >
+                            <a href=""><svg class=" img-fluid borderimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                                <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"></path>
+                                </svg></a>
+                            </div>
+                            <div class="col-sm-4">
+                            <a href="">
+                                <img class=" img-fluid p-1 borderimg" width="40" height="40" src="phone-call-svgrepo-com.svg" alt="phone--v1"/>
+                            </a>
+                            </div>
+                        <div class="col-sm-4">
+                            <a href="">
+                                <svg class=" img-fluid borderimg"xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 24 24">
+                                    <path d="M 8 3 C 5.2 3 3 5.2 3 8 L 3 16 C 3 18.8 5.2 21 8 21 L 16 21 C 18.8 21 21 18.8 21 16 L 21 8 C 21 5.2 18.8 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.7 5 19 6.3 19 8 L 19 16 C 19 17.7 17.7 19 16 19 L 8 19 C 6.3 19 5 17.7 5 16 L 5 8 C 5 6.3 6.3 5 8 5 z M 17 6 C 16.4 6 16 6.4 16 7 C 16 7.6 16.4 8 17 8 C 17.6 8 18 7.6 18 7 C 18 6.4 17.6 6 17 6 z M 12 7 C 9.2 7 7 9.2 7 12 C 7 14.8 9.2 17 12 17 C 14.8 17 17 14.8 17 12 C 17 9.2 14.8 7 12 7 z M 12 9 C 13.7 9 15 10.3 15 12 C 15 13.7 13.7 15 12 15 C 10.3 15 9 13.7 9 12 C 9 10.3 10.3 9 12 9 z"></path>
+                                    </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        this is man
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3 text-white">
+                    <h2>About us.</h2>
+                    <p>Minipip was founded in 2019 with the simple aim of making investing, trading, and personal finance easier to understand. The stock market and financial world worries many people; however, it is not as complicated as it may seem.  That’s why at Minipip we offer free resources on many topics, a free financial academy, financial tools and free analysis on shares and other financial instruments.<br>
+                        Minipip is not regulated by the financial conduct authority, and we do not give specific individual advice, though we do work with an abundance of regulated firms to who do offer these services. Visit our recommended brokers and partners page for more information. <br>
+                        Most our information and services are free, and we aim to keep it that way, we do this to help build trust of our users. We believe this kind of information should be available to the public at no cost. Please do not plagiarise any of our work.</p><br>
+                </div>
+                <div class="col-md-3 mt-3 text-white ">
+                    <h2> Terms of uses. </h2>
+                    <p>Minipip Limited is registered in the UK. Company number – 12377177. Minipip is an information usage website collecting data from third parties. Any Analysis, news, tools, or resources are for educational or entertainment purposes only. By using this website, you agree to all our Terms and privacy policy. <br>
+                        Spread bets and CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage or volatile market conditions.  A high percentage of investors lose money when trading these products (Varies from broker to broker). You should consider whether you understand how spread bets and CFDs work, and whether you can afford to take the high risk of losing your money. Investments are also risky, and you could lose money with your provider. For more assistance on the products available, contact us now or visit our Resources page. <br>
+                        Minipip are remunerated on client referrals from its partnering brokers. For more information about our partnering brokers or Minipip, please contact us.</p>
+                </div>
+            
+        </div>
+    </div>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
